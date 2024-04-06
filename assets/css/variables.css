@@ -1,0 +1,22 @@
+/* Colors Variables */
+:root{
+    --white_color:#fff;
+    --black_color:#000;
+    --light_pink_color:#F237F6;
+    --dark_pink:#FA00FF;
+    --danger-color:red;
+    --pink_color:#E019E4;
+
+    /* Font-weight variable's */
+    --regular:400;
+    --medium:500;
+    --semi_bold:600;
+    --bold:700;
+    --extra_bold:900;
+
+    /* Font-style */
+    --upper_case:uppercase;
+
+    /* Transition speed */
+    --transition:all 0.3s ease-in-out;
+}

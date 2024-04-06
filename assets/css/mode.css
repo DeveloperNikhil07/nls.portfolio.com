@@ -1,0 +1,8 @@
+/* Dark mode css start */
+body.switch{background-color: #000; transition: var(--transition);}
+.switch .hero-wrapper,.switch .about-us-wrapper, .switch .my_projects,.switch .contact-wrapper,.switch .footer-wrapper,.switch .contact-wrapper, .switch .contact-form:after,.switch .contact-form{background-color: #000; background-image: linear-gradient(to right, #000 100%, transparent);}
+.switch .contact-form{box-shadow: 0px 0px 5px 0px #f0f0f0;}
+.switch .form-fields input,.switch .form-fields textarea{color: #fff; background-color: #1c1c1ce0;}
+.switch .ellips1,.ellips2,.ellips3,.ellips4,.ellips5,.ellips6,.ellips7,.switch .about-us-ellips1,.switch .about-us-ellips2,.switch .about-us-ellips3,
+.switch .about-us-ellips4,.switch .contact-us-circle::before,.switch .contact-us-circle::after{visibility: hidden;}
+.switch .about-us-image img{box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 15%); border-radius: 50%;}

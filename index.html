@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/mode.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <header id="header" class="header-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="header-main-wrapper">
+                    <div class="header-inner-wrapper d-flex align-items-center justify-content-between">
+                        <div class="col-8 col-md-4 col-lg-3">
+                            <div class="logo">
+                                <a href="index.html">Nikhil Lodhi</a>
+                            </div>
+                        </div>
+                        <div class="col-lg- col-xl-4 col-xxl-5">
+                            <nav class="menu">
+                                <ul class="">
+                                    <li>
+                                        <div class="navbar-logo d-xl-none text-center">
+                                            <a href="index.html">Nikhil <span id="navbar_logo_typer"></span></a>
+                                        </div>
+                                    </li>
+                                    <li class="close-menu-icon d-xl-none d-flex align-items-center justify-content-center"
+                                        onclick="navbar_close()"><a href="javascript:void(0)"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                            </svg></li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                    <li class="d-block d-lg-none"><a href="#contact" class="contact-btn">Contact Me</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-4 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                            <div class="header-button d-flex align-items-center justify-content-end">
+                                <ul class="d-flex align-items-center justify-content-end">
+                                    <li class="d-none d-md-block">Light</li>
+                                    <li>
+                                        <label for="toggle-btn">
+                                            <input type="checkbox" name="toggle-btn" id="toggle-btn"
+                                                onclick="addClassToBody()">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </li>
+                                    <li class="d-none d-md-block">Dark</li>
+                                    <li class=" d-none d-lg-block">
+                                        <a href="#contact" class="contact-btn">Contact Me</a>
+                                    </li>
+                                </ul>
+                                <div class="toggle-switch" onclick="navbar_toggle_active()">
+                                    <span class="middle-line"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner section start -->
+    <section class="hero-wrapper">
+        <div class="container">
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="hero-title section-title">
+                        <h1>Nikhil Lodhi</h1>
+                        <p class="hero-desc position-relative">
+                            I’m a Frontend Web
+                            <span id="auto_type"></span> <br> and I work
+                            remotely from Bharat
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="banner-circle mx-auto me-md-auto ms-lg-auto position-relative">
+                        <div class="cv-button d-flex align-items-center justify-content-center">
+                            <a href="" class="file" download="" id="download-cv" onclick="cv()"><img
+                                    src="assets/images/download-icon.png" alt="icon"> Cv</a>
+                        </div>
+                        <span class="radial-one"></span>
+                        <span class="radial-two"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="ellips1"></span>
+        <span class="ellips2"></span>
+        <span class="ellips3"></span>
+        <span class="ellips4"></span>
+        <span class="ellips5"></span>
+        <span class="ellips6"></span>
+        <span class="ellips7"></span>
+    </section>
+
+    <!-- About us section -->
+    <section id="about" class="about-us-wrapper position-relative overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-us-content section-title">
+                        <h2>About me</h2>
+                        <!-- <img src="assets/images/" alt=""> -->
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-5">
+                            <div class="about-us-image position-relative">
+                                <img src="assets/images/computer.png" alt="Image" class="w-100">
+                                <div class="ellips-shadow">
+                                    <span class="small-ellips"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="about-us-content position-relative z-1">
+                                <p class="">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries,</p>
+                                <a href="#contact">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="about-us-ellips1"></span>
+        <span class="about-us-ellips2"></span>
+        <span class="about-us-ellips3"></span>
+        <span class="about-us-ellips4"></span>
+    </section>
+
+    <!-- My Projects  -->
+    <section id="projects" class="my_projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="projects-content section-title">
+                        <h2>Our Skills</h2>
+                    </div>
+                    <div class="projects-progress"></div>
+                    <div class="project-skills-tabs">
+                        <ul
+                            class="d-flex align-items-center justify-content-between justify-content-md-center justify-content-xxl-between flex-wrap">
+                            <li><span>Html</span><img src="assets/images/html.png" alt="icon"></li>
+                            <li><span>Css</span><img src="assets/images/css.png" alt="icon"></li>
+                            <li><span>Bootstrap</span><img src="assets/images/bootstrap.png" alt="icon"></li>
+                            <li><span>RWD</span><img src="assets/images/responsive-web-design.png" alt="icon"></li>
+                            <li><span>jQuery</span><img src="assets/images/jquery.png" alt="icon"></li>
+                            <li><span>Javascript</span><img src="assets/images/js.png" alt="icon"></li>
+                            <li><span>Wordpress</span><img src="assets/images/wordpress.png" alt="icon"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact us section start -->
+    <section id="contact" class="contact-wrapper overflow-hidden position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-us-title section-title">
+                        <h2>Contact Me</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-6 mx-auto">
+                    <form class="contact-form"
+                        action="https://script.google.com/macros/s/AKfycbwG95Tzvtt4DO-otvjHR0uhS3s6bU2Hphko-Sx5f3_ubpIgPWHH47FURJm2243fZWzd/exec"
+                        method="post">
+                        <h3>Contact Here</h3>
+                        <div class="form-fields">
+                            <label>First Name <sup>*</sup></label>
+                            <input type="text" id="firstname" name="FirstName" required placeholder="First Name...">
+                        </div>
+                        <div class="form-fields">
+                            <label>Last Name </label>
+                            <input type="text" id="lastname" name="LastName" placeholder="Last Name...">
+                        </div>
+                        <div class="form-fields">
+                            <label>Enter Your Email <sup>*</sup></label>
+                            <input type="email" id="email" name="Email" required placeholder="Enter Email...">
+                        </div>
+                        <div class="form-fields">
+                            <label>Message</label>
+                            <textarea id="Message" cols="30" name="Message" rows="4"
+                                placeholder="Message..."></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contact-us-circle">
+            <span class="contact-ellips-1"></span>
+        </div>
+    </section>
+    <!-- Footer start -->
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-white fs-5"><span>&#169;</span> All Right Reserved by Nikhil Lodhi</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/autotyping@1.2.6/dist/AutoTyping.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
