@@ -861,3 +861,77 @@ p.hero-desc::before {
 .footer-wrapper p {
     font-size: 16px;
 }
+
+/* success modal popup */
+.popup-overlay{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.success-popup{
+    width: auto;
+    height: auto;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: var(--white_color);
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.success-popup h2{
+    font-size:30px;
+    font-weight: var(--semi_bold);
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 30px;
+    font-family: var(--k2d-font-family);
+    color: var(--success);
+}
+
+.success-popup p{
+    font-size: 20px;
+    font-weight: var(--medium);
+    padding-bottom: 10px;
+}
+
+.success-popup a{
+    font-size: 20px;
+    font-weight: var(--medium);
+    display: inline-block;
+    border-radius: 40px;
+    padding:8px 30px;
+    background-color: var(--pink_color);
+    color: var(--white_color);
+    min-width: 160px;
+    text-align: center;
+    margin-top: 20px;
+}
+.right-icon{
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    height: 80PX;
+    width: 80PX;
+    border-radius: 50%;
+    background-color: var(--success);
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fialed-icon{
+    background-color: var(--danger-color);
+}
+.faild-popup h2{
+    color: var(--danger-color);
+}
+.faild-popup a{
+    background-color: var(--danger-color);
+}
