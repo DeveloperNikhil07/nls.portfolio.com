@@ -41,7 +41,7 @@
                                             </svg></li>
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="#about">About</a></li>
-                                    <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#our_skills">Our Skills</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                     <li class="d-block d-lg-none"><a href="#contact" class="contact-btn">Contact Me</a>
                                     </li>
@@ -85,7 +85,7 @@
                         <p class="hero-desc position-relative">
                             I’m a Frontend Web
                             <span id="auto_type"></span> <br> and I work
-                            remotely from Bharat
+                            at New Delhi (NSP)
                         </p>
                     </div>
                 </div>
@@ -130,11 +130,10 @@
                         </div>
                         <div class="col-12 col-md-7">
                             <div class="about-us-content position-relative z-1">
-                                <p class="">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries,</p>
+                                <p class="">Passionate web designer specializing in crafting beautiful, functional
+                                    websites. With a focus on user experience and responsive design, I create tailored
+                                    solutions that drive results. Let's collaborate to bring your digital vision to
+                                    life.</p>
                                 <a href="#contact">Contact Me</a>
                             </div>
                         </div>
@@ -149,7 +148,7 @@
     </section>
 
     <!-- My Projects  -->
-    <section id="projects" class="my_projects">
+    <section id="our_skills" class="my_projects">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -224,22 +223,41 @@
             </div>
         </div>
     </footer>
+
+    <!-- Success modal popup  -->
+    <div class="popup-overlay d-none" id="successPopup">
+        <div class="success-popup">
+            <div class="right-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff"
+                    class="bi bi-emoji-sunglasses-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v.116A4.2 4.2 0 0 1 8 5c.35 0 .69.04 1 .116V5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-1.994-1.839A3 3 0 0 0 8 6c-.393 0-.74.064-1.006.161A2 2 0 0 1 5 8h-.438a2 2 0 0 1-1.94-1.515zM4.969 9.75A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .866-.5z" />
+                </svg>
+            </div>
+            <h2 class="">Success</h2>
+            <p>Your form has been submitted successfully.</p>
+            <a href="javascript:void(0);" onclick="closePopup()">Close</a>
+        </div>
+    </div>
+    <!-- Failed -->
+    <div class="popup-overlay d-none" id="failed_popup">
+        <div class="success-popup faild-popup d-none" id="failed-popup">
+            <div class="right-icon fialed-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff"
+                    class="bi bi-emoji-frown-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m-2.715 5.933a.5.5 0 0 1-.183-.683A4.5 4.5 0 0 1 8 9.5a4.5 4.5 0 0 1 3.898 2.25.5.5 0 0 1-.866.5A3.5 3.5 0 0 0 8 10.5a3.5 3.5 0 0 0-3.032 1.75.5.5 0 0 1-.683.183M10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8" />
+                </svg>
+            </div>
+            <h2>Failed !</h2>
+            <p>Something went wrong please try again later!!</p>
+            <a href="javascript:void(0);" onclick="closePopup()">Close</a>
+        </div>
+    </div>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/autotyping@1.2.6/dist/AutoTyping.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyFJ8Ru8lAVkAGvPea5jQOV7ksCxAIT0zjifm_a_uehuwIK7THsA-ebZKw7_rVDFBG3/exec'
-        const form = document.forms['contact_data_form']
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => alert("Thank you! your form is submitted successfully."))
-                .then(() => { window.location.reload(); })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
 </body>
 
 </html>
