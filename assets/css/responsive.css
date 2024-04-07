@@ -339,7 +339,7 @@
         }
     }
 
-    /* Project section start */
+    /* our skills section start */
     .skills-image>li {
         margin: 0px;
     }
@@ -378,6 +378,10 @@
         left: 0;
         width: 580px;
     }
+    /*     modal popup start */
+    .success-popup p{
+        font-size:18px;
+}
 }
 
 @media screen and (max-width:767px) {
@@ -487,7 +491,7 @@
         padding-left: 0;
     }
 
-    /* Project section start */
+    /* our skills section start */
     .project-skills-tabs>ul {
         column-gap: 0px;
     }
@@ -543,4 +547,7 @@
     .footer-wrapper p {
         font-size: 14px !important;
     }
+/*     modal popup start */
+    .success-popup p{
+        font-size:16px;
 }
